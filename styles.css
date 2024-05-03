@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+.calculator {
+    border: 2px black solid;
+    border-radius: 5px;
+    height: 55vh;
+    width: 50%;
+}
+
+.screen {
+    border: 1px black solid;
+    height: 10vh;
+    width: auto;
+    font-size: 300%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+}
+
+button {
+    width: 15%;
+    height: 12%;
+    border-radius: 60%;
+    border: none;
+}
