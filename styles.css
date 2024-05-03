@@ -11,8 +11,11 @@
 .calculator {
     border: 2px black solid;
     border-radius: 5px;
-    height: 55vh;
+    height: 60vh;
     width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(5, 20%);
 }
 
 .screen {
@@ -22,15 +25,14 @@
     font-size: 300%;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
+button {
+    width: 100%;
+    height: 70%;
+    border-radius: 70%;
+    border: none;
 }
 
-button {
-    width: 15%;
-    height: 12%;
-    border-radius: 60%;
-    border: none;
+/* how to read grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+.AC {
+    grid-area: 1 / 1 / 2 / 2;
 }
