@@ -44,6 +44,23 @@
 // I decided to go and try a different route below
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // this displays values on the screen
 let display = document.getElementById("display")
 
