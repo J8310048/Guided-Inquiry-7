@@ -54,7 +54,7 @@ function appendToDisplay(input) {
     display.textContent += input;
 }
 
-// this is for the clear display button. What's happening here is the clear button 
+// this is for the all clear display button. What's happening here is the all clear button is being asked to clear any text on the display when pressed. The empty quotes symbolize an empty string, so therefore it will be empty everytime the all clear button is clicked.
 function clearDisplay() {
     display.textContent = "";
 }
