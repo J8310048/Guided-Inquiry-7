@@ -32,8 +32,6 @@
 //     nine = numbers[9];
 // });
 
-// But I'm going to use a single event listener for that instead
-
 
 // below links all my operator buttons to this JavaScript file to perform their operations
 // let divide = document.querySelector("divide")
@@ -46,6 +44,23 @@
 // I decided to go and try a different route below
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // this displays values on the screen
 let display = document.getElementById("display")
 
@@ -54,7 +69,7 @@ function appendToDisplay(input) {
     display.textContent += input;
 }
 
-// this is for the clear display button. What's happening here is the clear button 
+// this is for the all clear display button. What's happening here is the all clear button is being asked to clear any text on the display when pressed. The empty quotes symbolize an empty string, so therefore it will be empty everytime the all clear button is clicked.
 function clearDisplay() {
     display.textContent = "";
 }
