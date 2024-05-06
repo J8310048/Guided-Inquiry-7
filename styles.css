@@ -13,9 +13,12 @@
 }
 
 /* this is for the display */
-div .display {
+div #display {
     border: 1px solid black;
     padding: 10% 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 300%;
 }
 
 /* this is for the div that holds all the buttons. It houses them into a grid */
@@ -28,10 +31,11 @@ div .display {
 /* this is for the spacing for all the buttons */
 button {
     padding: 20px;
+    cursor: pointer;
 }
 
 /* to read grid area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
-/* for the AC button */
+/* for the All Clear button */
 .AC {
     grid-area: 1 / 1 / 2 / 3;
 }
@@ -42,7 +46,7 @@ button {
 }
 
 /* for the button nine */
-.divide {
+#divide {
     grid-area: 1 / 4 / 2 / 5;
 }
 
@@ -62,11 +66,16 @@ button {
 }
 
 /* for the button multiply */
-.multiply {
+#multiply {
     grid-area: 2 / 4 / 3 / 5;
 }
 
 /* for the button zero */
 .zero {
     grid-area: 5 / 1 / 6 / 3
+}
+
+/* for the button equal */
+#equal-sign {
+    grid-area: 5 / 4 / 6 / 5
 }
