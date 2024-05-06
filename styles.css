@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(green, yellow);
+}
+
 /* this styling is for the border and size of the entire calculator */
 .calculator {
     border: 1px solid black;
@@ -19,6 +23,8 @@ div #display {
     display: flex;
     justify-content: flex-end;
     font-size: 300%;
+    overflow-x: hidden;
+    color: white;
 }
 
 /* this is for the div that holds all the buttons. It houses them into a grid */
@@ -34,15 +40,19 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-image: linear-gradient(rgb(1, 219, 1), rgb(255, 255, 158));
+    border: 1px solid yellowgreen;
+}
+
+button:active {
+    background-image: linear-gradient(rgba(0, 255, 0, 0.736), rgba(255, 255, 158, 0.648));
+}
+
 /* to read grid area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
 /* for the All Clear button */
 .AC {
-    grid-area: 1 / 1 / 2 / 3;
-}
-
-/* for the delete button */
-.DEL {
-    grid-area: 1 / 3 / 2 / 4;
+    grid-area: 1 / 1 / 2 / 4;
 }
 
 /* for the button nine */
@@ -78,4 +88,93 @@ button {
 /* for the button equal */
 #equal-sign {
     grid-area: 5 / 4 / 6 / 5
+}
+
+
+@media screen and (min-width: 51px) and (max-width: 319px) {
+
+    /* sizing for the buttons */
+    button {
+        padding: 1px;
+        cursor: pointer;
+        overflow-x: hidden;
+        font-size: 50%;
+    }
+
+    /* hover effect for the buttons */
+    button:hover {
+        background-image: linear-gradient(rgb(1, 219, 1), rgb(255, 255, 158));
+        border: 1px solid yellowgreen;
+    }
+
+    /* this is for when the button is clicked */
+    button:active {
+        background-image: linear-gradient(rgba(0, 255, 0, 0.736), rgba(255, 255, 158, 0.648));
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    /* sizing for the buttons */
+    button {
+        padding: 5px;
+        cursor: pointer;
+        overflow-x: hidden;
+        font-size: 50%;
+    }
+
+    /* hover effect for the buttons */
+    button:hover {
+        background-image: linear-gradient(rgb(1, 219, 1), rgb(255, 255, 158));
+        border: 1px solid yellowgreen;
+    }
+
+    /* this is for when the button is clicked */
+    button:active {
+        background-image: linear-gradient(rgba(0, 255, 0, 0.736), rgba(255, 255, 158, 0.648));
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+
+    /* sizing for the buttons */
+    button {
+        padding: 10px;
+        cursor: pointer;
+        overflow-x: hidden;
+        font-size: 50%;
+    }
+
+    /* hover effect for the buttons */
+    button:hover {
+        background-image: linear-gradient(rgb(1, 219, 1), rgb(255, 255, 158));
+        border: 1px solid yellowgreen;
+    }
+
+    /* this is for when the button is clicked */
+    button:active {
+        background-image: linear-gradient(rgba(0, 255, 0, 0.736), rgba(255, 255, 158, 0.648));
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    /* sizing for the buttons */
+    button {
+        padding: 15px;
+        cursor: pointer;
+        overflow-x: hidden;
+        font-size: 100%;
+    }
+
+    /* hover effect for the buttons */
+    button:hover {
+        background-image: linear-gradient(rgb(1, 219, 1), rgb(255, 255, 158));
+        border: 1px solid yellowgreen;
+    }
+
+    /* this is for when the button is clicked */
+    button:active {
+        background-image: linear-gradient(rgba(0, 255, 0, 0.736), rgba(255, 255, 158, 0.648));
+    }
 }
