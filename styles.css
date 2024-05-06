@@ -2,37 +2,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: center;
-    margin: auto;
 }
 
-
-
+/* this styling is for the border and size of the entire calculator */
 .calculator {
-    border: 2px black solid;
-    border-radius: 5px;
-    height: 60vh;
-    width: 50%;
+    border: 1px solid black;
+    position: relative;
+    margin: 30% 30%;
+    align-items: center;
+}
+
+/* this is for the display */
+div .display {
+    border: 1px solid black;
+    padding: 10% 0;
+}
+
+/* this is for the div that holds all the buttons. It houses them into a grid */
+.buttons {
     display: grid;
-    grid-template-columns: repeat(4, 20%);
-    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: 4(100px);
+    grid-template-rows: 5(100px);
 }
 
-.screen {
-    border: 1px black solid;
-    height: 10vh;
-    width: auto;
-    font-size: 300%;
-}
-
+/* this is for the spacing for all the buttons */
 button {
-    width: 100%;
-    height: 70%;
-    border-radius: 70%;
-    border: none;
+    padding: 20px;
 }
 
-/* how to read grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+/* to read grid area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+/* for the AC button */
 .AC {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+/* for the delete button */
+.DEL {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+/* for the button nine */
+.divide {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+/* for the button seven */
+.seven {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+/* for the button eight */
+.eight {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+/* for the button divide */
+.nine {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+/* for the button multiply */
+.multiply {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+/* for the button zero */
+.zero {
+    grid-area: 5 / 1 / 6 / 3
 }
