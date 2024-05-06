@@ -32,8 +32,6 @@
 //     nine = numbers[9];
 // });
 
-// But I'm going to use a single event listener for that instead
-
 
 // below links all my operator buttons to this JavaScript file to perform their operations
 // let divide = document.querySelector("divide")
